@@ -1,20 +1,20 @@
 .header__root {
+  width: 1440px;
+  margin: 0 auto;
+}
+
+.header__navbar {
   background-color: #007271;
   position: fixed;
   top: 0;
   z-index: 5;
-  width: 1440px;
-}
-
-.header__navbar {
-  width: 1170px;
-  margin: 0 auto;
-  position: relative;
   box-sizing: border-box;
   display: flex;
   align-items: center;
   justify-content: space-around;
   height: 40px;
+  width: inherit;
+  padding: 0 135px;
 }
 
 .header__navbar a {
@@ -39,6 +39,7 @@
 }
 
 .header__media {
+  margin-top: 40px;
   height: 98px;
   background-color: #f2f2eb;
   display: flex;
