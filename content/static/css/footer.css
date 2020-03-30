@@ -1,9 +1,10 @@
 .footer__policy {
-  height: 46px;
+  height: 54px;
   background: #004f4e;
-  padding-top: 8px;
   font-family: Roboto, sans-serif;
   font-style: normal;
+  display: flex;
+  align-items: center;
 }
 
 .footer__policy > .footer__container {
@@ -39,6 +40,7 @@
   display: flex;
   color: #6aa;
   cursor: pointer;
+  transition: color 0.3s ease;
 }
 
 .footer__policy > .footer__container > .footer__link:hover {
