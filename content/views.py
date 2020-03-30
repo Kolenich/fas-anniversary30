@@ -1,4 +1,4 @@
-"""Представления для приложения posts_app."""
+"""Представления для приложения content."""
 
 from django.views.generic import TemplateView
 
