@@ -1,0 +1,72 @@
+.successful-regulation__root {
+  background: url("../img/artemiev-success.png") top center no-repeat;
+  height: 691px;
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+}
+
+.successful-regulation__container {
+  width: 1170px;
+  margin: 0 auto;
+  padding-top: 138px;
+}
+
+.successful-regulation__title-block {
+  color: #fff;
+}
+
+.successful-regulation__title-block > .successful-regulation__subtitle {
+  font-weight: 900;
+  font-size: 0.75rem;
+  line-height: 2em;
+  letter-spacing: 0.4166em;
+  text-transform: uppercase;
+  opacity: 0.5;
+  margin-bottom: 0.9166em;
+}
+
+.successful-regulation__title-block > .successful-regulation__title {
+  font-weight: bold;
+  font-size: 4.5rem;
+  line-height: 1.1111em;
+  margin-bottom: 0.7083em;
+}
+
+.successful-regulation__resume {
+  position: relative;
+  left: 4px;
+  font-weight: normal;
+  font-size: 1rem;
+  line-height: 1.5em;
+  color: #fafeff;
+  opacity: 0.8;
+}
+
+.successful-regulation__play-button {
+  display: flex;
+  margin-bottom: 10px;
+  align-items: center;
+  justify-content: space-around;
+  height: 60px;
+  width: 450px;
+  background-color: #cecab3;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.successful-regulation__play-button p {
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 32px;
+  letter-spacing: 20px;
+  text-transform: uppercase;
+  color: #fff;
+  padding-left: 22px;
+}
+
+.successful-regulation__play-button div.successful-regulation__play-icon {
+  position: relative;
+  right: 5px;
+  top: 2px;
+}

@@ -1,0 +1,21 @@
+{% load static %}
+<section class="successful-regulation__root">
+  <div class="successful-regulation__container">
+    <div class="successful-regulation__title-block">
+      <h3 class="successful-regulation__subtitle">фильм, фильм, фильм!</h3>
+      <h2 class="successful-regulation__title">
+        30 лет успешного антимонопольного<br/>
+        регулирования
+      </h2>
+    </div>
+    <div class="successful-regulation__play-button" role="button">
+      <p>Смотреть</p>
+      <div class="successful-regulation__play-icon">
+        <object type="image/svg+xml" data="{% static 'svg/play-gray.svg' %}">
+          <img src="{% static 'svg/play-gray.svg' %}" alt="Play"/>
+        </object>
+      </div>
+    </div>
+    <span class="successful-regulation__resume">Итоги 30-летней истории ФАС России</span>
+  </div>
+</section>
