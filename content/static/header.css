@@ -1,4 +1,4 @@
-.header-root {
+.header__root {
   background-color: #007271;
   position: fixed;
   top: 0;
@@ -7,7 +7,7 @@
   height: 40px;
 }
 
-.navbar {
+.header__navbar {
   width: 1170px;
   margin: 0 auto;
   position: relative;
@@ -18,7 +18,7 @@
   height: 100%;
 }
 
-.navbar a {
+.header__navbar a {
   font-family: 'Open Sans', sans-serif;
   font-style: normal;
   font-weight: 600;
@@ -35,6 +35,54 @@
   text-decoration: none;
 }
 
-.navbar a:hover {
+.header__navbar a:hover {
   background-color: #005f5e;
+}
+
+.header__media {
+  height: 98px;
+  background-color: #f2f2eb;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 145px;
+}
+
+.header__anniversary30 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 270px;
+}
+
+.header__fas-logo {
+  display: flex;
+  align-items: center;
+  margin-left: 50px;
+}
+
+.header__fas-logo p {
+  margin-left: 16px;
+  max-width: 272px;
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  color: #cecab3;
+}
+
+.header__media-icons {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 170px;
+  position: relative;
+  right: 12px;
+}
+
+.header__media-icons a {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
 }

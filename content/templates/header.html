@@ -1,5 +1,7 @@
-<header class="header-root">
-  <section class="navbar">
+{% load static %}
+<header class="header__root">
+
+  <section class="header__navbar">
     <a style="width: 126px" href="#appeal">Обращение</a>
     <a style="width: 111px" href="#chronicle">Хроника</a>
     <a style="width: 103px" href="#history">История</a>
@@ -10,5 +12,54 @@
     <a style="width: 83px" href="#museum-materials-reports">Музей</a>
     <a style="width: 117px" href="#museum-materials-reports">Материалы</a>
     <a style="width: 104px" href="#museum-materials-reports">Доклады</a>
+  </section>
+
+  <section class="header__media">
+    <div class="header__anniversary30">
+      <object type="image/svg+xml" data="{% static 'icons/30-years.svg' %}">
+        <img src="{% static 'icons/30-years.svg' %}" alt="30 лет"/>
+      </object>
+      <object type="image/svg+xml" data="{% static 'icons/30-years-text.svg' %}">
+        <img src="{% static 'icons/30-years-text.svg' %}" alt="30 лет"/>
+      </object>
+    </div>
+    <div class="header__fas-logo">
+      <object type="image/svg+xml" data="{% static 'icons/eagle.svg' %}">
+        <img src="{% static 'icons/eagle.svg' %}" alt="Орел"/>
+      </object>
+      <p>Свобода конкуренции и эффективная защита предпринимательства<br/>ради будущего России</p>
+    </div>
+    <div class="header__media-icons">
+      <a href="https://ru-ru.facebook.com/rus.fas" target="_blank" rel="noopener noreferrer">
+        <object type="image/svg+xml" data="{% static 'icons/facebook.svg' %}">
+          <img src="{% static 'icons/facebook.svg' %}" alt="Орел"/>
+        </object>
+      </a>
+      <a href="https://vk.com/fas_rus" target="_blank" rel="noopener noreferrer">
+        <object type="image/svg+xml" data="{% static 'icons/vk.svg' %}">
+          <img src="{% static 'icons/vk.svg' %}" alt="Орел"/>
+        </object>
+      </a>
+      <a href="https://twitter.com/rus_fas" target="_blank" rel="noopener noreferrer">
+        <object type="image/svg+xml" data="{% static 'icons/twitter.svg' %}">
+          <img src="{% static 'icons/twitter.svg' %}" alt="Орел"/>
+        </object>
+      </a>
+      <a href="https://ok.ru/ok.fas" target="_blank" rel="noopener noreferrer">
+        <object type="image/svg+xml" data="{% static 'icons/ok.svg' %}">
+          <img src="{% static 'icons/ok.svg' %}" alt="Орел"/>
+        </object>
+      </a>
+      <a href="https://instagram.com/fas_time" target="_blank" rel="noopener noreferrer">
+        <object type="image/svg+xml" data="{% static 'icons/instagram.svg' %}">
+          <img src="{% static 'icons/instagram.svg' %}" alt="Орел"/>
+        </object>
+      </a>
+      <a href="https://youtube.com/user/FASvideotube" target="_blank" rel="noopener noreferrer">
+        <object type="image/svg+xml" data="{% static 'icons/youtube.svg' %}">
+          <img src="{% static 'icons/youtube.svg' %}" alt="Орел"/>
+        </object>
+      </a>
+    </div>
   </section>
 </header>
