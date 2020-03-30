@@ -14,6 +14,7 @@ class IndexView(TemplateView):
     def get_context_data(self, **kwargs):
         """Переопределение метода передачи в шаблон контекста. Добавляет остальные кверисеты по моделям."""
         context = super().get_context_data(**kwargs)
+        extra_data = {key: value for key, value in vars(extra_context).items() if not key.startswith('__')}
         context.update({
             'booklets': Booklet.objects.all(),
             'books': Book.objects.all(),
@@ -22,6 +23,6 @@ class IndexView(TemplateView):
             'photo_cards': PhotoCard.objects.all(),
             'infographics': Infographics.objects.all(),
             'magazines': Magazine.objects.all(),
-            **vars(extra_context)
+            **extra_data
         })
         return context
