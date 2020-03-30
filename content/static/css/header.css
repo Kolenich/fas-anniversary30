@@ -139,10 +139,6 @@
   top: 2px;
 }
 
-.header__appeal-button div.header__play-icon object {
-  pointer-events: none;
-}
-
 .header__hint {
   position: absolute;
   bottom: 100px;
