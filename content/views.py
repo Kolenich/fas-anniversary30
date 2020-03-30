@@ -16,13 +16,13 @@ class IndexView(TemplateView):
         context = super().get_context_data(**kwargs)
         extra_data = {key: value for key, value in vars(extra_context).items() if not key.startswith('__')}
         context.update({
-            'booklets': Booklet.objects.all(),
-            'books': Book.objects.all(),
-            'videos': Video.objects.all(),
-            'documents': Document.objects.all(),
-            'photo_cards': PhotoCard.objects.all(),
-            'infographics': Infographics.objects.all(),
-            'magazines': Magazine.objects.all(),
+            'booklets': Booklet.objects.order_by('order'),
+            'books': Book.objects.order_by('order'),
+            'videos': Video.objects.order_by('-id'),
+            'documents': Document.objects.order_by('-id'),
+            'photo_cards': PhotoCard.objects.order_by('-id'),
+            'infographics': Infographics.objects.order_by('order'),
+            'magazines': Magazine.objects.order_by('order'),
             **extra_data
         })
         return context
