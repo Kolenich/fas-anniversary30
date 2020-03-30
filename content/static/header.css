@@ -1,0 +1,40 @@
+.header-root {
+  background-color: #007271;
+  position: fixed;
+  top: 0;
+  z-index: 5;
+  width: 1440px;
+  height: 40px;
+}
+
+.navbar {
+  width: 1170px;
+  margin: 0 auto;
+  position: relative;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 100%;
+}
+
+.navbar a {
+  font-family: 'Open Sans', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+  text-transform: uppercase;
+  color: #f2f2eb;
+  transition: background-color 0.3s ease;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.navbar a:hover {
+  background-color: #005f5e;
+}

@@ -10,3 +10,4 @@ class IndexView(ListView):
 
     template_name = 'index.html'
     model = Book
+    context_object_name = 'books'
