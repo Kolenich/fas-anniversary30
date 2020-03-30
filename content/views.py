@@ -1,16 +1,14 @@
 """Представления для приложения posts_app."""
 
-from django.views.generic import ListView
+from django.views.generic import TemplateView
 
 from content.models import Book, Booklet, Document, Infographics, Magazine, PhotoCard, Video
 
 
-class IndexView(ListView):
+class IndexView(TemplateView):
     """Корневое представление главной страницы."""
 
     template_name = 'index.html'
-    model = Booklet
-    context_object_name = 'booklets'
 
     def get_context_data(self, **kwargs):
         """Переопределение метода передачи в шаблон контекста. Добавляет остальные кверисеты по моделям."""
@@ -28,6 +26,7 @@ class IndexView(ListView):
         ]
         context = super().get_context_data(**kwargs)
         context.update({
+            'booklets': Booklet.objects.all(),
             'books': Book.objects.all(),
             'videos': Video.objects.all(),
             'documents': Document.objects.all(),
