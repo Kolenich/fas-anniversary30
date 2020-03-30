@@ -1,1 +1,12 @@
-# Create your views here.
+"""Представления для приложения posts_app."""
+
+from django.views.generic import ListView
+
+from content.models import Book
+
+
+class IndexView(ListView):
+    """Корневое представление главной страницы."""
+
+    template_name = 'index.html'
+    model = Book
